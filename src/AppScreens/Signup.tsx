@@ -11,7 +11,7 @@ import API_URL from './config';
 const isValidEmail = (email: string): boolean => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
-};
+}; 
 
 const Signup: React.FC = () => {
   const navigation = useNavigation();

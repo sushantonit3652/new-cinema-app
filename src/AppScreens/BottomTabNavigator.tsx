@@ -68,7 +68,7 @@ const CustomTabBar = ({ state, descriptors, navigation }) => {
                   source={iconName}
                   style={[
                     { width: 24, height: 24, tintColor: isFocused ? 'white' : 'gray' },
-                    isFocused && { width: 28, height: 28 },
+                    isFocused && { width: 20, height: 20 },
                   ]}
                 />
               </CustomTabBarButton>
@@ -82,7 +82,7 @@ const CustomTabBar = ({ state, descriptors, navigation }) => {
 
 const BottomTabNavigator = () => (
   <Tab.Navigator tabBar={(props) => <CustomTabBar {...props} />}>
-    <Tab.Screen name="Home" component={HomeScreen} options={{ headerShown: false }}   />
+    <Tab.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
     <Tab.Screen name="Category" component={CategoryScreen} />
     <Tab.Screen name="Favorite" component={FavoriteScreen} />
     <Tab.Screen name="Settings" component={SettingScreen} />
@@ -91,33 +91,25 @@ const BottomTabNavigator = () => (
 
 const styles = StyleSheet.create({
   shadowContainer: {
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: -5,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 10,
-    elevation: 10,
-    backgroundColor: '#140005', // Ensure the container has a background color
+    // Ensure the container has a background color
   },
   tabBar: {
     flexDirection: 'row',
+    alignItems: 'flex-start',
     height: 70,
-    backgroundColor: '#140005',
-    borderTopWidth: 5,
+    backgroundColor: 'black',
     position: 'absolute',
     bottom: 0,
     left: 0,
     right: 0,
-    borderTopColor: 'red',
     borderColor: '#DD3872', // Add border color here
+
   },
   tabItem: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop: 10,
+
   },
   customButton: {
     justifyContent: 'center',
@@ -125,14 +117,15 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     padding: 10,
     borderWidth: 0,
+
   },
   customButtonFocused: {
     width: 70,
     height: 70,
-    top: -20,
     borderWidth: 12,
-    borderColor: '#DD3872',
+    borderColor: 'black',
     backgroundColor: '#DD3872',
+    top: -10
   },
 });
 
