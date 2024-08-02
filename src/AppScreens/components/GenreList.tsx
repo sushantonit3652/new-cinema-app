@@ -17,7 +17,15 @@ const genres: string[] = [
     'Thriller',
     'Documentary',
     'Animation',
-    'Adventure'
+    'Adventure',
+    'Romance',
+    'Sci-Fi',
+    'Thriller',
+    'Documentary',
+    'Animation',
+    'Adventure',
+    
+
 ];
 
 const GenreItem: React.FC<GenreItemProps> = ({ title, isSelected, onPress }) => (

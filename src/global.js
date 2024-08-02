@@ -1,4 +1,6 @@
-import { StyleSheet, } from 'react-native';
+import { StyleSheet,Dimensions, } from 'react-native';
+const { width: screenWidth, height: screenHeight } = Dimensions.get('window');
+const isTablet = screenWidth >= 768;
 
 export const globalStyles = StyleSheet.create({
   main: {
@@ -8,7 +10,7 @@ export const globalStyles = StyleSheet.create({
   container: {
     flex: 1,
     width: '100%',
-    paddingHorizontal: 20,
+    paddingHorizontal: isTablet ? 32 : 16,
 
   },
   backarrow: {
@@ -62,5 +64,10 @@ export const globalStyles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '500',
     paddingVertical:10
-  }
+  },
+  cinema: {
+    color: '#DD3872',
+    fontSize: isTablet ? 32 : 28,
+    fontWeight: '700',
+  },
 });
