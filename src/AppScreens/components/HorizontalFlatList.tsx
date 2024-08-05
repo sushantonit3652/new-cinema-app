@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     },
     cont: {
         flex: 1,
-        
+
     },
     carouselItem: {
         padding: 0,
@@ -109,24 +109,23 @@ const styles = StyleSheet.create({
         bottom: -0,
         left: 0,
         right: 0,
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        backgroundColor: 'rgba(0, 0, 0, 0.2)',
         padding: 10,
     },
     title: {
         color: 'white',
-        fontSize: 24,
-        fontWeight: 'bold',
+        fontSize: 20,
     },
     genre: {
         color: 'white',
-        fontSize: 18,
+        fontSize: 14,
     },
     dotContainer: {
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
         padding: 10,
-        
+
     },
     dot: {
         width: 10,

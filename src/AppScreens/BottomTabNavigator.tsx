@@ -83,9 +83,9 @@ const CustomTabBar = ({ state, descriptors, navigation }) => {
 const BottomTabNavigator = () => (
   <Tab.Navigator tabBar={(props) => <CustomTabBar {...props} />}>
     <Tab.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
-    <Tab.Screen name="Category" component={CategoryScreen} />
-    <Tab.Screen name="Favorite" component={FavoriteScreen} />
-    <Tab.Screen name="Settings" component={SettingScreen} />
+    <Tab.Screen name="Category" component={CategoryScreen}  options={{ headerShown: false }}  />
+    <Tab.Screen name="Favorite" component={FavoriteScreen} options={{ headerShown: false }}  />
+    <Tab.Screen name="Settings" component={SettingScreen} options={{ headerShown: false }}  />
   </Tab.Navigator>
 );
 

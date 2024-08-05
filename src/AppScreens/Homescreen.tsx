@@ -6,6 +6,7 @@ import FilterScreen from './components/filter';
 import HorizontalFlatList from './components/HorizontalFlatList';
 import StyledFlatList from './components/StyledFlatList';
 import GenreList from './components/GenreList';
+import Searchnav from './components/searchnav';
 
 
 const HomeScreen: React.FC = () => {
